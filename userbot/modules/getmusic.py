@@ -154,6 +154,7 @@ async def _(event):
         event.chat_id,
         loa,
         force_document=True,
+        thumb=thumb_image,
         allow_cache=False,
         caption=query,
         supports_streaming=True,

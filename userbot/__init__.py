@@ -291,21 +291,21 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [ProjectBish](https://github.com/irfanfebrian13/ProjectBish) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply(f'ProjectBish UserBot by `@ONLYXBEAN`! (`@{me.username}`) **I am here to help you**.')
             else:
-                await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you 😊`")
+                await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you 😊`  __I miss You 😘🤪__")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@ProjectBish"):
+            if event.query.user_id == uid and query.startswith("@HomeGang"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
                     text="{}\nTotal loaded modules: {}".format(
-                        "UserButt modules helper.\n",
+                        "ProjectBish UserBot by [IrfanFebrians](t.me//ONLYXBEAN)\n\nGitHub Repository [Here](https://github.com/irfanfebrian13/ProjectBish)\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -313,22 +313,30 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "ProjectBish Helper",
-                    text="List of Modules",
+                    "©️ @HomeGang",
+                    text="@HomeGang",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    "ProjectBish",
-                    text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
+                    "©️ @HomeGang",
+                    text="""@HomeGang is for you!
+You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "GitHub Repo",
+                                "Follow channel",
+                                "https://t.me/HomeGang"),
+                            custom.Button.url(
+                                "Support Channel",
+                                "https://t.me/IFXNC"),],
+                        [
+                            custom.Button.url(
+                                "Github Repository"
                                 "https://github.com/irfanfebrian13/ProjectBish"),
                             custom.Button.url(
-                                "Support",
-                                "https://t.me/UserBotIndo")],
+                                "String Session"
+                                "https://GenerateSession.irfanfebrian.repl.run/")],
                     ],
                     link_preview=False,
                 )
