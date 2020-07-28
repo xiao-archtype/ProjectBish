@@ -171,6 +171,13 @@
      "WEATHER_DEFLANG": {
       "description": "Set the default language for the userbot's weather module.",
       "value": "en",
+    },
+    "BOT_TOKEN": {
+      "description": "Set this to enable inline bot helper. get the token from @BotFather",
+      "required": false
+    },
+    "BOT_USERNAME": {
+      "description": "Username of the bot you created with @BotFather",
       "required": false
     }
   },
