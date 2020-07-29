@@ -329,14 +329,14 @@ You can convert your account to bot and use them. Remember, you can't manage som
                                 "https://t.me/HomeGang"),
                             custom.Button.url(
                                 "Support Channel",
-                                "https://t.me/IFXNC"),],
+                                "https://t.me/IFXNC"), ],
                         [
                             custom.Button.url(
                                 "Github Repository"
                                 "https://github.com/irfanfebrian13/ProjectBish"),
                             custom.Button.url(
                                 "String Session"
-                                "https://GenerateSession.irfanfebrian.repl.run/"),],
+                                "https://GenerateSession.irfanfebrian.repl.run/"), ],
                     ],
                     link_preview=False,
                 )
